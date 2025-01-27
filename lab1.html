@@ -1,11 +1,88 @@
-<!DOCTYPE html> 
-<html>                              
-    <head>            
-        <meta charset="utf-8">
-        <title>Lab 1</title> 
-    </head>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics-Center</title>
+</head>
+<body>
     <header>
-        <h1>Lab 1</h1>
+        <h1>Electronics-Center</h1>
+       
+        <input type="text" id="textbox" placeholder="Enter text here..."> <br>  <!--Textbox-->
+
+        <select id="action-list">   
+            <option value="" disabled selected>Action</option>  <!--Default name for the drop down list-->
+            <option value="0">Archive</option>
+            <option value="1">Edit</option>
+            <option value="2">Delete</option>
+            <option value="3">Collection</option>
+        </select>
+
+        <select id="type-list">
+            <option value="" disabled selected>Type</option>   <!--Default name for the drop down list-->
+            <option value="0">LapTop</option>     
+            <option value="1">NoteBook</option>
+            <option value="2">Tablet</option>
+            <option value="3">CellPhone</option>
+        </select>
+        
     </header>
-</html>     
+
+    <main>
+        <table>
+            <thead>  <!-- Table Head with all the titles-->
+                <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Company</th>
+                    <th>Year</th>
+                    <th>Type</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr> 
+                    <td><input type="radio" name="device"> <img src="/img/41Q-OTrwsqL.jpg" alt="Device 1" width="100"></td>
+                    <td>MacBook Pro</td>
+                    <td>Apple</td>
+                    <td>2023</td>
+                    <td>Laptop</td>
+                    <td>
+                        <button>Archive</button>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                        <button>Collection</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="device"> <img src="/img/715AVcfGf2L.jpg" alt="Device 2" width="100"></td>
+                    <td>Galaxy Tab S8</td>
+                    <td>Samsung</td>
+                    <td>2022</td>
+                    <td>Tablet</td>
+                    <td>
+                        <button>Archive</button>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                        <button>Collection</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="device"> <img src="/img/71MFE2UY6-L.jpg" alt="Device 3" width="100"></td>
+                    <td>Galaxy Z Fold</td>
+                    <td>Samsung</td>
+                    <td>2023</td>
+                    <td>CellPhone</td>
+                    <td>
+                        <button>Archive</button>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                        <button>Collection</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
